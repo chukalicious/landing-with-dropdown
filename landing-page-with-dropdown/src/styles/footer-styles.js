@@ -11,5 +11,4 @@ export const clientLogo = {
   objectFit: "contain",
   paddingleft: ".2rem",
   paddingRight: ".7rem",
-  // viewBox: "-50 -50 100 100",
 };
