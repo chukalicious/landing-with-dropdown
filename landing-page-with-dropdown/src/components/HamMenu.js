@@ -1,5 +1,6 @@
 import iconMenu from "../images/iconMenu.svg";
 import { hamburgerStyle } from "../styles/hamburgerMenuStyles";
+import DrawerContainer from "./Drawer/DrawerContainer";
 import { useState } from "react";
 
 const HamMenu = () => {
@@ -8,20 +9,28 @@ const HamMenu = () => {
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
-  const controlDrawer = (e) => {
-    setOpenDrawer(!openDrawer);
+  const slideOpen = () => {
+    setOpenDrawer(true);
   };
-  console.log(openDrawer);
+
   return (
-    <div style={hamburgerStyle}>
-      <img
-        onClick={controlDrawer}
-        src={iconMenu}
-        alt="menu"
-        style={{ width: "45%", paddingLeft: "2.9rem" }}
-      />
+    <div>
+      {openDrawer === false ? (
+        <div style={hamburgerStyle}>
+          <img
+            onClick={slideOpen}
+            src={iconMenu}
+            alt="menu"
+            style={{ width: "45%", paddingLeft: "2.9rem" }}
+          />
+        </div>
+      ) : (
+        <DrawerContainer
+          openDrawer={openDrawer}
+          setOpenDrawer={setOpenDrawer}
+        />
+      )}
     </div>
   );
 };
-
 export default HamMenu;
