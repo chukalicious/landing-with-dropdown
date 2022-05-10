@@ -1,14 +1,35 @@
-const DrawerContainer = () => {
+import { drawerContainer } from "../../styles/drawer-styles";
+
+const DrawerContainer = (props) => {
+  const closeDrawer = () => {
+    props.setOpenDrawer(false);
+  };
+
   return (
-    <div>
-      <div>X</div>
+    <div style={drawerContainer}>
+      <div onClick={closeDrawer}>X</div>
       <div>
         <ul>
           <div>
-            <li>Features</li>
+            <li>
+              Features
+              <ul>
+                <li>To do</li>
+                <li>Calendar</li>
+                <li>Reminders</li>
+                <li>Planing</li>
+              </ul>
+            </li>
           </div>
           <div>
-            <li>Company</li>
+            <li>
+              Company
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
           </div>
           <div>
             <li>Careers</li>
