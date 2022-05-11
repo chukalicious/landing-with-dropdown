@@ -41,3 +41,15 @@ export const buttonsWrapper = {
   objectFit: "",
   margin: "0 auto",
 };
+
+export const outerDrawerLi = {
+  border: "red solid 1px",
+  listStyle: "none",
+  padding: ".5rem",
+};
+
+export const innerDrawerUl = {
+  // display: "none",
+  listStyle: "none",
+  padding: ".5rem",
+};

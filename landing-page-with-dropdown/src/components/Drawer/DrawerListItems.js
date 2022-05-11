@@ -3,6 +3,8 @@ import {
   liContainer,
   x,
   buttonsWrapper,
+  outerDrawerLi,
+  innerDrawerUl,
 } from "../../styles/drawer-styles";
 import { drawerButtons } from "../../styles/button-styles";
 
@@ -19,31 +21,31 @@ const DrawerListItems = (props) => {
       <div>
         <ul>
           <div>
-            <li>
+            <li style={outerDrawerLi}>
               Features
-              <ul>
-                <li>To do</li>
-                <li>Calendar</li>
-                <li>Reminders</li>
-                <li>Planing</li>
+              <ul style={innerDrawerUl}>
+                <li style={outerDrawerLi}>To do</li>
+                <li style={outerDrawerLi}>Calendar</li>
+                <li style={outerDrawerLi}>Reminders</li>
+                <li style={outerDrawerLi}>Planing</li>
               </ul>
             </li>
           </div>
           <div>
-            <li>
+            <li style={outerDrawerLi}>
               Company
-              <ul>
-                <li>History</li>
-                <li>Our Team</li>
-                <li>Blog</li>
+              <ul style={innerDrawerUl}>
+                <li style={outerDrawerLi}>History</li>
+                <li style={outerDrawerLi}>Our Team</li>
+                <li style={outerDrawerLi}>Blog</li>
               </ul>
             </li>
           </div>
           <div>
-            <li>Careers</li>
+            <li style={outerDrawerLi}>Careers</li>
           </div>
           <div>
-            <li>About</li>
+            <li style={outerDrawerLi}>About</li>
           </div>
         </ul>
       </div>
