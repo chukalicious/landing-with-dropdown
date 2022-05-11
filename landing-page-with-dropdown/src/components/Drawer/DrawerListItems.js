@@ -1,11 +1,15 @@
+import { xButton, liContainer, x } from "../../styles/drawer-styles";
+
 const DrawerListItems = (props) => {
   console.log("drawerlistitems: props:", props.closeDrawer);
   const closeDrawer = () => {
     props.closeDrawer();
   };
   return (
-    <div>
-      <div onClick={closeDrawer}>X</div>
+    <div style={liContainer}>
+      <div onClick={closeDrawer} style={xButton}>
+        <p style={x}>X</p>
+      </div>
       <div>
         <ul>
           <div>
