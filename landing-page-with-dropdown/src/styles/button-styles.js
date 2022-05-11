@@ -12,6 +12,4 @@ export const ActionButton = styled.div`
   border-radius: 15px;
 `;
 
-export const drawerButtons = {
-  // width: "50%",
-};
+export const drawerButtons = {};
