@@ -1,4 +1,10 @@
-import { xButton, liContainer, x } from "../../styles/drawer-styles";
+import {
+  xButton,
+  liContainer,
+  x,
+  buttonsWrapper,
+} from "../../styles/drawer-styles";
+import { drawerButtons } from "../../styles/button-styles";
 
 const DrawerListItems = (props) => {
   console.log("drawerlistitems: props:", props.closeDrawer);
@@ -41,8 +47,10 @@ const DrawerListItems = (props) => {
           </div>
         </ul>
       </div>
-      <button>Login</button>
-      <button>Register</button>
+      <div style={buttonsWrapper}>
+        <button style={drawerButtons}>Login</button>
+        <button style={drawerButtons}>Register</button>
+      </div>
     </div>
   );
 };

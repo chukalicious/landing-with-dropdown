@@ -9,7 +9,8 @@ export const drawerContainer = {
   top: "0",
   right: "0",
   bottom: "0",
-  backgroundColor: "rgba(250, 17, 79, 0.9)",
+  // backgroundColor: "rgba(250, 17, 79, 0.9)",
+  backgroundColor: "rgba(0, 0, 0, 0.8)",
   // keeps items to the right side if the screen
   alignItems: "flex-end",
 };
@@ -27,12 +28,16 @@ export const xButton = {
 };
 
 export const liContainer = {
-  border: "green solid 2px",
-  // justifyContent: "flex-start",
-
   display: "flex",
   flexDirection: "column",
   backgroundColor: "#fff",
   width: "70%",
   height: "100vh",
+};
+
+export const buttonsWrapper = {
+  display: "flex",
+  flexDirection: "column",
+  objectFit: "",
+  margin: "0 auto",
 };
