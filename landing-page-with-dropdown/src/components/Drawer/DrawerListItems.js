@@ -19,7 +19,7 @@ const DrawerListItems = (props) => {
   console.log("openFeatures", openFeatures);
   const [openCompany, setOpenCompany] = useState(false);
 
-  const openNestedFeatures = (e) => {
+  const openNestedFeatures = () => {
     setOpenFeatures(!openFeatures);
   };
 
