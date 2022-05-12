@@ -4,6 +4,13 @@ export const MainDiv = styled.div`
   width: 100%;
   margin: auto;
   min-height: 83vh;
+
+  @media (max-width: 375px) {
+    background-color: red;
+  }
+  @media (min-width: 376px) {
+    background-color: blue;
+  }
 `;
 
 export const h2Styles = {
