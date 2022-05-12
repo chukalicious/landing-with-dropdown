@@ -27,14 +27,6 @@ const DrawerListItems = (props) => {
     setOpenCompany(!openCompany);
   };
 
-  const closeNestedCompany = () => {
-    setOpenFeatures(false);
-  };
-
-  const closeNestedFeatures = () => {
-    setOpenFeatures(false);
-  };
-
   return (
     <div style={liContainer}>
       <div onClick={closeDrawer} style={xButton}>
@@ -46,7 +38,7 @@ const DrawerListItems = (props) => {
             Features{" "}
           </li>
           {openFeatures ? (
-            <ul onClick={() => closeNestedCompany} style={innerDrawerUl}>
+            <ul style={innerDrawerUl}>
               <li style={outerDrawerLi}>To do</li>
               <li style={outerDrawerLi}>Calendar</li>
               <li style={outerDrawerLi}>Reminders</li>
