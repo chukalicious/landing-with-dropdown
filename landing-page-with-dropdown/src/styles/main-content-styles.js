@@ -6,10 +6,10 @@ export const MainDiv = styled.div`
   min-height: 83vh;
 
   @media (max-width: 375px) {
-    background-color: red;
+    // background-color: red;
   }
-  @media (min-width: 376px) {
-    background-color: blue;
+  @media (min-width: 430px) {
+    // background-color: blue;
   }
 `;
 

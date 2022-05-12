@@ -1,5 +1,5 @@
 import DrawerListItems from "./DrawerListItems";
-import { drawerContainer } from "../../styles/drawer-styles";
+import { DrawerContainerDiv } from "../../styles/drawer-styles";
 
 const DrawerContainer = (props) => {
   const closeDrawer = () => {
@@ -7,7 +7,7 @@ const DrawerContainer = (props) => {
   };
 
   return (
-    <div style={drawerContainer}>
+    <div>
       <DrawerListItems closeDrawer={closeDrawer} />
     </div>
   );
