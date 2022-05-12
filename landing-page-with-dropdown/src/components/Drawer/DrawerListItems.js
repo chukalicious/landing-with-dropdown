@@ -32,7 +32,7 @@ const DrawerListItems = (props) => {
       <div onClick={closeDrawer} style={xButton}>
         <p style={x}>X</p>
       </div>
-      <div style={{ border: "red 1px solid" }}>
+      <div>
         <div>
           <li onClick={openNestedFeatures} style={outerDrawerLi}>
             Features{" "}
