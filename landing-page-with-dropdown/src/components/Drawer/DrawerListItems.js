@@ -7,9 +7,23 @@ import {
   innerDrawerUl,
 } from "../../styles/drawer-styles";
 import { drawerButtons } from "../../styles/button-styles";
+import { useState } from "react";
 
 const DrawerListItems = (props) => {
-  console.log("drawerlistitems: props:", props.closeDrawer);
+  console.log("DrawerListItems: props", props);
+
+  const [openFeatures, setOpenFeatures] = useState(false);
+  console.log("openFeatures", openFeatures);
+  const [openCompany, setOpenCompany] = useState(false);
+
+  const openNestedFeatures = () => {
+    setOpenFeatures(!openFeatures);
+  };
+
+  const openNestedCompany = () => {
+    setOpenCompany(!openCompany);
+  };
+
   const closeDrawer = () => {
     props.closeDrawer();
   };
@@ -21,24 +35,28 @@ const DrawerListItems = (props) => {
       <div>
         <ul>
           <div>
-            <li style={outerDrawerLi}>
+            <li onClick={openNestedFeatures} style={outerDrawerLi}>
               Features
-              <ul style={innerDrawerUl}>
-                <li style={outerDrawerLi}>To do</li>
-                <li style={outerDrawerLi}>Calendar</li>
-                <li style={outerDrawerLi}>Reminders</li>
-                <li style={outerDrawerLi}>Planing</li>
-              </ul>
+              {openFeatures ? (
+                <ul style={innerDrawerUl}>
+                  <li style={outerDrawerLi}>To do</li>
+                  <li style={outerDrawerLi}>Calendar</li>
+                  <li style={outerDrawerLi}>Reminders</li>
+                  <li style={outerDrawerLi}>Planing</li>
+                </ul>
+              ) : null}
             </li>
           </div>
           <div>
-            <li style={outerDrawerLi}>
+            <li onClick={openNestedCompany} style={outerDrawerLi}>
               Company
-              <ul style={innerDrawerUl}>
-                <li style={outerDrawerLi}>History</li>
-                <li style={outerDrawerLi}>Our Team</li>
-                <li style={outerDrawerLi}>Blog</li>
-              </ul>
+              {openCompany ? (
+                <ul style={innerDrawerUl}>
+                  <li style={outerDrawerLi}>History</li>
+                  <li style={outerDrawerLi}>Our Team</li>
+                  <li style={outerDrawerLi}>Blog</li>
+                </ul>
+              ) : null}
             </li>
           </div>
           <div>
