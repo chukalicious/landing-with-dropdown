@@ -49,7 +49,6 @@ export const outerDrawerLi = {
 };
 
 export const innerDrawerUl = {
-  display: "none",
   listStyle: "none",
   padding: ".5rem",
 };
