@@ -50,8 +50,8 @@ const DrawerListItems = (props) => {
         </ul>
       </div>
       <div style={buttonsWrapper}>
-        <button style={{ width: "50%", margin: "auto" }}>Login</button>
-        <button style={{ width: "50%", margin: "auto" }}>Register</button>
+        <div style={drawerButtons}>Login</div>
+        <div style={drawerButtons}>Register</div>
       </div>
     </div>
   );

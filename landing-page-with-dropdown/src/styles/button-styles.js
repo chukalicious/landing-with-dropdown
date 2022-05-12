@@ -12,4 +12,14 @@ export const ActionButton = styled.div`
   border-radius: 15px;
 `;
 
-export const drawerButtons = {};
+export const drawerButtons = {
+  width: "60%",
+  margin: "auto",
+  padding: ".5rem",
+  border: "#7f7f7f .75px solid",
+  borderRadius: ".75rem",
+  marginBottom: "1rem",
+  display: "flex",
+  justifyContent: "center",
+  color: "#7f7f7f",
+};

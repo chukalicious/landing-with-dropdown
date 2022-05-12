@@ -38,8 +38,8 @@ export const buttonsWrapper = {
   display: "flex",
   flexDirection: "column",
   objectFit: "",
-  margin: "0 auto",
-  border: "red solid 1px",
+  margin: "1rem auto",
+  // border: "red solid 1px",
   width: "100%",
 };
 
