@@ -8,13 +8,14 @@ export const StyledHeader = styled.div`
   padding-top: 0.5%;
   height: fit-content;
   justify-content: space-between;
+  border: red solid 1px;
 
-  @media (max-width: 375px) {
-    background-color: red;
-  }
-  @media (min-width: 430px) {
-    background-color: blue;
-  }
+  // @media (max-width: 375px) {
+  //   background-color: red;
+  // }
+  // @media (min-width: 430px) {
+  //   background-color: blue;
+  // }
 `;
 
 export const HeaderH1 = styled.h1`
